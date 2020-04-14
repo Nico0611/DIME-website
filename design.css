@@ -1,10 +1,32 @@
-
-body {
-  background-color: grey;
-  font-family: 'Cabin', sans-serif;
+.menu{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 80%;
+	float: right;
 }
 
+.menu a{
+	font-size: 18px;
+	padding: 15px 0;
+	color: white;
+	font-weight: 700;
+	text-decoration: none;
+	float: right;
+}
 
+.h1{
+	text-align: center;
+}
+
+.menu :hover{
+	color: red;
+	text-decoration: underline;
+}
+
+.contact{
+	padding: 100px;
+}
 p, ol {
   text-align: center;
   font-size: 18px;
@@ -12,25 +34,42 @@ p, ol {
   margin-left: 5%;
 }
 
+#backtotop{
+	position: fixed;
+	right: 10px;
+	font-size: 25px;
+	font: bold;
+	bottom: 10px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: #FF652F;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+	color: #272727;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+#backtotop :hover{
+	color: white;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  width: 100%;
+  width: 90%;
   background-color: #333;
 }
 
-li {
-  float: left;
-}
 
 
 li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 140px;
   text-decoration: none;
 }
 
@@ -38,10 +77,129 @@ li a:hover {
   background-color: #111;
 }
 
-body {
- background-image: url("party1.jpg");
+html, body {
+ background-image: url("images/party1.jpg");
+ max-height: 1000px;
  background-position: center; /* Center the image */
  background-repeat: no-repeat; /* Do not repeat the image */
  background-size: cover;
- height: 400px;
+ padding: 0px 2px 0px 2px;
+ margin: 0;
+ 
+ 
 }
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #747474;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #14A76C;
+}
+
+
+#home {
+  width: 4px;
+  height: 4px;
+  background: url(images/home.gif) 0 0;
+}
+#back2Home {
+    position: fixed;
+    bottom: 0px;
+    right: 20;
+	background: url(images/home.gif) 0 0;
+    text-align: center;
+    font-size: 5px;
+    text-decoration: none;
+}
+#back2Home:hover {
+    background-color: #FF652F;
+    color: black;
+}
+body {  
+            margin: 0;   
+        }  
+        .showSlide {	
+            display: none; 
+        }  
+            .showSlide img {
+                width: 100%;  
+            }  
+        .slidercontainer {
+            max-width: 700px;  
+            position: relative;  
+            margin: auto;  
+        }  
+        .left, .right {  
+            cursor: pointer;  
+            position: absolute;  
+            top: 50%;  
+            width: auto;  
+            padding: 16px;  
+            margin-top: -22px;  
+            color: white;  
+            font-weight: bold;  
+            font-size: 18px;  
+            transition: 1s ease;  
+            border-radius: 0 3px 3px 0;  
+        }  
+        .right {  
+            right: 0;  
+            border-radius: 3px 0 0 3px;  
+        }  
+            .left:hover, .right:hover {  
+                background-color: rgba(115, 115, 115, 0.8);  
+            }  
+        .content {  
+            color: #eff5d4;  
+            font-size: 30px;  
+            padding: 8px 12px;  
+            position: absolute;  
+            top: 10px;  
+            width: 100%;  
+            text-align: center;  
+        }  
+        .active {  
+            background-color: #717171;  
+        }  
+        /* Fading animation */  
+        .fade {  
+            -webkit-animation-name: fade;  
+            -webkit-animation-duration: 1.5s;  
+            animation-name: fade;  
+            animation-duration: 1.5s;  
+        }  
+        @-webkit-keyframes fade {  
+            from {  
+                opacity: .4  
+            }  
+            to {  
+                opacity: 1  
+            }  
+        }  
+  
+        @keyframes fade {  
+            from {  
+                opacity: .4  
+            }  
+            to {  
+                opacity: 1  
+            }  
+        }  
