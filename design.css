@@ -78,15 +78,17 @@ li a:hover {
 }
 
 html, body {
- background-image: url("images/party1.jpg");
- max-height: 1000px;
- background-position: center; /* Center the image */
- background-repeat: no-repeat; /* Do not repeat the image */
- background-size: cover;
- padding: 0px 2px 0px 2px;
- margin: 0;
- 
- 
+	background-image: url("images/party1.jpg");
+ 	max-height: 1000px;
+	background: url(images/party1.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-position: center;
+	 background-repeat: no-repeat; /* Do not repeat the image */
+ 	background-size: cover;
+ 	padding: 0px 2px 0px 2px;
+ 	margin: 0; 
 }
 
 input[type=text], select {
