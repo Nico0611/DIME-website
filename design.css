@@ -79,16 +79,20 @@ li a:hover {
 
 html, body {
 	background-image: url("images/party1.jpg");
- 	max-height: 1000px;
+	max-height: 1000px;
 	background: url(images/party1.jpg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-position: center;
-	 background-repeat: no-repeat; /* Do not repeat the image */
- 	background-size: cover;
- 	padding: 0px 2px 0px 2px;
- 	margin: 0; 
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover;
+	padding: 0px 2px 0px 2px;
+	margin: 0;
+	color: white;
+	
+ 
+ 
 }
 
 input[type=text], select {
@@ -170,7 +174,7 @@ body {
                 background-color: rgba(115, 115, 115, 0.8);  
             }  
         .content {  
-            color: #eff5d4;  
+            color: black;  
             font-size: 30px;  
             padding: 8px 12px;  
             position: absolute;  
@@ -205,3 +209,26 @@ body {
                 opacity: 1  
             }  
         }  
+		
+.heading{
+	font-size: 40px;
+	text-align: center;
+	width: 100%;
+	color: #60D3F0;
+}
+.picture, .dload{
+	text-align: center;
+	margin: 50px;
+}
+.google_translate_element{
+	width: 1px;
+	color: red;
+	float: left;
+}
+
+.download{
+	text-align: center;
+	width: 100%;
+	cursor: pointer;
+}
+	
