@@ -13,46 +13,45 @@
 
 		<link rel="stylesheet" type="text/css" href="design.css" />
 	</head>
-
 	<body>
 		<main class= "main-style";>
-			<img src="logo.jpg"
-				alt="logo" height="150" width="200"/>
-		    <nav class="menu">
-				    <a href="index.html">Home</a>
-					<a href="#download">Download</a>
-				    <a href="contact.html">Contact Us</a>
-				    <a href="#team">Our Team</a>
-		    </nav>
+			<a id="logo" title="Parteasy" href="index.html">	<img src="images/logo.jpg" height="150" width="200"></a>		
+
+			<nav class="menu">
+				<a href="index.html">Home</a>
+				<a href="download.html">Download</a>
+				<a href="contact.html">Contact Us</a>
+				<a href="#team">Our Team</a>
+			</nav> 
+			<div class="slidercontainer">  
+				<div class="showSlide fade">  
+					<img src="images/party.jpg" height="400" width="500" />  
+						<div class="content">Have The Time Of Your Life</div>  
+				</div>  
+				<div class="showSlide fade">  
+					<img src="images/spotify.jpg" height="400" width="500"/>  
+						<div class="content"></div>  
+				</div>  
+				<div class="showSlide fade">  
+					<img src="images/party-drinks.jpg" height="400" width="500"/>  
+						<div class="content">Food & Drink Menus</div>  
+				</div>  
+				<div class="showSlide fade">  
+					<img src="images/christmas-party.jpg" height="400" width="500"/>  
+						<div class="content">Plan different Occasions</div>  
+				</div>
+				<div class="showSlide fade">  
+					<img src="images/download.jpg" height="400" width="500"/>  
+					<div class="content">On all Platforms</div>  
+				</div> 
+				<a class="left" onclick="nextSlide(-1)">❮</a>  
+				<a class="right" onclick="nextSlide(1)">❯</a>  
+			</div> 			
 			
-	<body>  
-    <div class="slidercontainer">  
-        <div class="showSlide fade">  
-            <img src="images/party-prep.jpg" height="400" width="500" />  
-            <div class="content">Fuck 1</div>  
-        </div>  
-        <div class="showSlide fade">  
-            <img src="images/spotify.jpg" height="400" width="500"/>  
-            <div class="content">Fuck 2</div>  
-        </div>  
-  
-        <div class="showSlide fade">  
-            <img src="images/party-drinks.jpg" height="400" width="500"/>  
-            <div class="content">Fuck 3</div>  
-        </div>  
-        <div class="showSlide fade">  
-            <img src="images/christmas-party.jpg" height="400" width="500"/>  
-            <div class="content">Fuck 4</div>  
-        </div>  
-        <!-- Navigation arrows -->  
-        <a class="left" onclick="nextSlide(-1)">❮</a>  
-        <a class="right" onclick="nextSlide(1)">❯</a>  
-    </div> 			
-			
-		<button id = "backtotop">
-		<i class="material-icons">&#x2191;</i>
-		</button>
+			<button id = "backtotop">
+				<i class="material-icons">&#x2191;</i>
+			</button>
 		</main>
-	<script src="script.js"></script>
+		<script src="script.js"></script>
 	</body>
 </html>
